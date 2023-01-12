@@ -4,6 +4,11 @@
     --opacity: 0.5;
 }
 
+a {
+    text-decoration: none;
+    color:#a2fdf9;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -129,7 +134,7 @@ body {
 
 }
 
-p:first-child {
-
+button + p {
+    font-size: 1.2rem;
 }
 
