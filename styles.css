@@ -21,6 +21,21 @@
     background-repeat: no-repeat;
 }
 
-.info-content {
+.info {
     width: 60vw;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.text {
+    padding-left: 3vw;
+}
+
+.dummy {
+    margin-bottom: 80px;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    font-weight: 700;
 }
