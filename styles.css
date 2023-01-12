@@ -36,6 +36,24 @@ body {
     background-repeat: none;
 }
 
+.logo {
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    top: 20vh;
+    gap: 1vw;
+    padding: 15px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    height: 10vh;
+}
+
+
 .right-container {
     width: max(300px, 60vw);
 
