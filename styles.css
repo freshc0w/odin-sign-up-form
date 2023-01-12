@@ -50,9 +50,12 @@ body {
 }
 
 .circle {
-    height: 10vh;
+    height: 15vh;
 }
 
+h1 {
+    font-size: 2rem;
+}
 
 .right-container {
     width: max(300px, 60vw);
@@ -167,7 +170,7 @@ form {
 }
 
 .input {
-    width: 42.5%;
+    width: 40%;
 
     display: flex;
     flex-flow: column wrap;
