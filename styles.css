@@ -1,0 +1,26 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.picture {
+    width: 40vw;
+    background-image: url(./img/futuristic.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.info-content {
+    width: 60vw;
+}
