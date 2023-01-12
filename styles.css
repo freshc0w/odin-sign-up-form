@@ -116,7 +116,7 @@ body {
  }
 
 .createAccount {
-    animation:input-shadow ease-in-out 2s infinite, rotate 4s linear infinite, opacityChange 3s infinite alternate;
+    animation:input-shadow ease-in-out 2s infinite, rotate 4s linear infinite, opacityChange 4s infinite alternate;
     border-radius: 0.5rem;
     cursor: pointer;
 }
