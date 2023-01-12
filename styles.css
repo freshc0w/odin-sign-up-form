@@ -139,7 +139,7 @@ button + p {
 }
 
 .mid {
-    background-color: rgba(12, 12, 20, .6);
+    background-color: rgba(12, 12, 20, .85);
     box-shadow: 7px 10px 30px -16px rgb(245, 245, 245);
 }
 form {
