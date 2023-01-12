@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    background-color: #000;
+    height: 100vh;
+    width: 100vh;
+    color: rgb(255, 255, 255);
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.picture {
+    width: 40vw;
+    background-image: url(./img/futuristic.jpg);
+    background-position: center;
+    background-position: auto;
+    background-repeat: none;
+}
+
+.right-container {
+    width: 60vw;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
