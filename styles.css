@@ -138,3 +138,21 @@ button + p {
     font-size: 1.2rem;
 }
 
+.mid {
+    background-color: rgba(12, 12, 20, .6);
+    box-shadow: 7px 10px 30px -16px rgb(245, 245, 245);
+}
+form {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+}
+
+.input {
+    width: 40%;
+
+    display: flex;
+    flex-flow: column wrap;
+    
+    text-transform: uppercase;
+}
