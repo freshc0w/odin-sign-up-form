@@ -1,5 +1,7 @@
 :root {
     --fontFamily: "Nova Flat";
+    --angle: 60deg;
+    --opacity: 0.5;
 }
 
 body {
@@ -38,12 +40,96 @@ body {
 }
 
 .text {
-    padding: 1em;
+    padding: 2rem;
 }
 
 .top {
     margin-bottom: 80px;
     font-size: 1.75rem;
     font-weight: 700;
+}
+
+.createAccount {
+    padding: 10px 40px;
+    
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.25rem;
+    color: white;
+
+    background-color: rgba(25, 25, 25, .8);
+    border: 0.3rem solid transparent;
+
+    /* Paint an image in the border */
+    border-image: conic-gradient(
+        from var(--angle),
+        black 0deg 90deg,
+        #a2fdf9 160deg 180deg,
+      black 180deg 270deg,
+      black 270deg 360deg
+    )
+    1 stretch;
+    background: rgb(255, 255, 255 / var(--opacity));
+}
+
+/* Animations */
+@supports (background: paint(houdini)) {
+    @property --opacity {
+      syntax: "<number>";
+      initial-value: 0.5;
+      inherits: false;
+    }
+  
+    @property --angle {
+      syntax: "<angle>";
+      initial-value: 0deg;
+      inherits: false;
+    }
+  
+    @keyframes opacityChange {
+      to {
+        --opacity: .75;
+      }
+    }
+  
+    @keyframes rotate {
+      to {
+        --angle: 360deg;
+      }
+    }
+}
+
+@keyframes input-shadow {
+    0% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0 0 16px rgb(230, 230, 230);
+    }
+    100% {
+        box-shadow: none;
+    }
+ }
+
+.createAccount {
+    animation:input-shadow ease-in-out 2s infinite, rotate 4s linear infinite, opacityChange 3s infinite alternate;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.createAccount:hover {
+    background-color: rgba(210, 210, 210, .1);
+    border-image: conic-gradient(
+        from var(--angle),
+        black 0deg 90deg,
+        red 160deg 180deg,
+      black 180deg 270deg,
+      black 270deg 360deg
+    )
+    1 stretch;
+
+}
+
+p:first-child {
+
 }
 
